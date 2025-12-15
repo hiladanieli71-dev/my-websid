@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hila Danieli - Baked with Love</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("shamant.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* שכבה כהה מעל הרקע */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.45);
+            z-index: -1;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+
+        header img {
+            width: 300px;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            background: rgba(255, 255, 255, 0.92);
+            margin: 40px auto;
+            padding: 40px 20px;
+            max-width: 1100px;
+            border-radius: 15px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .cake-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .cake-item {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            width: 260px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .cake-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, textarea {
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #C28840;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        /* WhatsApp bubble */
+        .whatsapp-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 999;
+        }
+
+        .whatsapp-bubble {
+            background: white;
+            color: #333;
+            padding: 10px 14px;
+            border-radius: 15px;
+            font-size: 14px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            max-width: 220px;
+        }
+
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 24px;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="hila danieli.png" alt="לוגו הילה">
+    <h1>Hila Danieli – Baked with Love</h1>
+    <p>טעם של בית • אהבה בכל ביס</p>
+</header>
+
+<nav>
+    <a href="#home">בית</a>
+    <a href="#cakes">עוגות</a>
+    <a href="#about">אודות</a>
+    <a href="#gallery">גלריה</a>
+    <a href="#contact">צור קשר</a>
+</nav>
+
+<section id="home">
+    <h2>ברוכים הבאים</h2>
+    <p style="text-align:center;">
+        עוגות ביתיות בעבודת יד, עם דגש על איכות, טעם ואהבה 💛
+    </p>
+</section>
+
+<section id="cakes">
+    <h2>קטלוג עוגות</h2>
+    <div class="cake-gallery">
+        <div class="cake-item">
+            <img src="lotos.png">
+            <h3>עוגת לוטוס</h3>
+            <p>עשירה, קרמית ומפנקת במיוחד</p>
+        </div>
+        <div class="cake-item">
+            <img src="choclet.png">
+            <h3>דאבל שוקולד</h3>
+            <p>שכבות שוקולד עם גנאש</p>
+        </div>
+        <div class="cake-item">
+            <img src="totim and crem .png">
+            <h3>קרם וניל</h3>
+            <p>בצק פריך, קצפת וטופינגים</p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>אודות</h2>
+    <p style="text-align:center; max-width:600px; margin:auto;">
+        היי, אני הילה דניאלי. האהבה שלי היא לאפות ולהעניק רגעים מתוקים לאנשים 💕
+    </p>
+</section>
+
+<section id="contact">
+    <h2>צור קשר</h2>
+
+    <form action="https://formsubmit.co/hiladanieli71@gmail.com" method="POST">
+        <!-- הודעה אוטומטית למי ששולח -->
+        <input type="hidden" name="_autoresponse" value="תודה שפנית ל־Hila Danieli – Baked with Love! ההודעה התקבלה ואחזור אליך בהקדם 💛✨">
+
+        <!-- כיבוי CAPTCHA – אפשר להפעיל אם רוצים -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- ניתן לשנות את נושא המייל שמגיע אלייך -->
+        <input type="hidden" name="_subject" value="הודעה חדשה מהאתר של הילה דניאלי">
+
+        <!-- שדות הטופס -->
+        <input type="text" name="name" placeholder="שם מלא" required>
+        <input type="email" name="email" placeholder="אימייל" required>
+        <textarea name="message" rows="5" placeholder="הודעה" required></textarea>
+        <button type="submit">שלח הודעה</button>
+    </form>
+</section>
+
+
+
+<!-- WhatsApp bubble -->
+<div class="whatsapp-container">
+    <div class="whatsapp-bubble">
+        היי 👋 אפשר ליצור איתי קשר גם ב-WhatsApp
+    </div>
+    <a href="https://wa.me/0585518494" target="_blank" class="whatsapp-btn">📱</a>
+</div>
+
+<footer>
+    © 2025 Hila Danieli – Baked with Love
+</footer>
+
+</body>
+</html>
+
